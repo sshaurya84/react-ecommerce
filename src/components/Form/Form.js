@@ -6,10 +6,10 @@ import Success from "./Success";
 
 export class Form extends Component {
   state = {
-    step: 4,
+    step: 1,
     firstName: "",
     lastName: "",
-    email: "sshaurya@yahoo.com",
+    email: "",
 
     password: "",
     confirmPassword: ""
