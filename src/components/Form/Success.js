@@ -15,7 +15,7 @@ export class FormPersonalDetails extends Component {
         <React.Fragment>
           <Title name="Success!" title="" />
           <div className="container text-center my-5">
-            Thank you for registering with us, an Email has been sent to:
+            Thank you for registering with us, an Email has been sent to :
             <List>
               <ListItem primaryText="" secondaryText={email} />
             </List>
