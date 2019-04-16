@@ -22,6 +22,7 @@ export class Navbar extends Component {
             </Link>
           </li>
         </ul>
+
         <Link to="/cart" className="ml-auto">
           <ButtonContainer>
             <span className="mr-2" />
@@ -29,6 +30,16 @@ export class Navbar extends Component {
             My Cart
           </ButtonContainer>
         </Link>
+        <ul className="navbar-nav align-items-center">
+          <li className="nav-item ml-3">
+            <Link to="/form" className="nav-link">
+              <ButtonContainer cart>
+                <i className="fas fa-user-circle mr-1" />
+                Sign Up
+              </ButtonContainer>
+            </Link>
+          </li>
+        </ul>
       </NavWrapper>
     );
   }
