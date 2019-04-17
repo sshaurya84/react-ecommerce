@@ -24,7 +24,6 @@ export class FormPersonalDetails extends Component {
     const {
       values: { firstName, lastName, email }
     } = this.props;
-    const { prevStep, nextStep } = this.props;
 
     return (
       <MuiThemeProvider>

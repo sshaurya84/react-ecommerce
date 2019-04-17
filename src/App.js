@@ -21,6 +21,7 @@ class App extends Component {
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route path="/form" component={Form} />
+
           <Route component={Default} />
         </Switch>
         <Modal />

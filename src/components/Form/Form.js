@@ -3,7 +3,7 @@ import FormUserDetails from "./FormUserDetails";
 import FormPersonalDetails from "./FormPersonalDetails";
 import Confirm from "./Confirm";
 import Success from "./Success";
-
+import LoginForm from "./LoginForm";
 export class Form extends Component {
   state = {
     step: 1,
@@ -57,6 +57,8 @@ export class Form extends Component {
       confirmPassword
     };
     switch (step) {
+      case 0:
+        return <LoginForm nextStep={this.nextStep} />;
       case 1:
         return (
           <h1>
@@ -65,6 +67,7 @@ export class Form extends Component {
               handleChange={this.handleChange}
               values={values}
               alert2={this.alert2}
+              prevStep={this.prevStep}
             />
           </h1>
         );

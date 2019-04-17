@@ -22,7 +22,7 @@ export class FormPersonalDetails extends Component {
     const {
       values: { password, confirmPassword }
     } = this.props;
-    const { handleChange, alert2 } = this.props;
+    const { handleChange } = this.props;
 
     return (
       <MuiThemeProvider>

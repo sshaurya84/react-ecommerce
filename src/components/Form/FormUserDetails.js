@@ -10,7 +10,10 @@ export class FormUserDetails extends Component {
     e.preventDefault();
     this.props.nextStep();
   };
-
+  back = e => {
+    e.preventDefault();
+    this.props.prevStep();
+  };
   render() {
     const {
       values: { firstName, lastName, email },
@@ -44,7 +47,6 @@ export class FormUserDetails extends Component {
               defaultValue={email}
             />
             <br />
-
             <RaisedButton
               label="Continue"
               primary={true}
@@ -55,6 +57,13 @@ export class FormUserDetails extends Component {
                   : this.continue
               }
             />
+            <br />
+            <h6>
+              Already have an Account?{" "}
+              <a href="" onClick={this.back}>
+                Login
+              </a>
+            </h6>
           </div>
         </React.Fragment>
       </MuiThemeProvider>
