@@ -25,6 +25,7 @@ export default function CartItem({ item, value }) {
         <div className="d-flex justify-content-center">
           <div>
             <button
+              disabled={count === 1 ? true : false}
               className="btn btn-black mx-1 "
               onClick={() => decrement(id)}
             >
